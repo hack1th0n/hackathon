@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#142a49">
+    <meta name="description" content="لوحة إدارة العقارات والعقود والدفعات">
+    <title>لوحة المعلومات | مِلك</title>
+    <link rel="stylesheet" href="/src/styles/tokens.css">
+    <link rel="stylesheet" href="/src/styles/base.css">
+    <link rel="stylesheet" href="/src/styles/components.css">
+    <link rel="stylesheet" href="/src/styles/pages.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-shell">
+        <aside class="sidebar">
+          <a class="brand" href="/dashboard" aria-label="نظام إدارة العقارات - لوحة المعلومات">
+            <span class="brand-mark" aria-hidden="true">م</span>
+            <span class="brand-text"><strong>مِلك</strong><small>إدارة العقارات</small></span>
+          </a>
+          <nav class="sidebar-nav" aria-label="القائمة الرئيسية">
+            <p class="nav-caption">القائمة</p>
+            <a class="nav-link is-active" href="/dashboard" aria-current="page"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">لوحة المعلومات</span></a>
+            <a class="nav-link" href="/properties"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-label">العقارات</span></a>
+            <a class="nav-link" href="/owners"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-label">الملاك</span></a>
+            <a class="nav-link" href="/tenants"><span class="nav-icon" aria-hidden="true">♙</span><span class="nav-label">المستأجرون</span></a>
+            <a class="nav-link" href="/leases"><span class="nav-icon" aria-hidden="true">▤</span><span class="nav-label">العقود</span></a>
+            <a class="nav-link" href="/payments"><span class="nav-icon" aria-hidden="true">◉</span><span class="nav-label">الدفعات</span></a>
+            <a class="nav-link" href="/expenses"><span class="nav-icon" aria-hidden="true">↗</span><span class="nav-label">المصروفات</span></a>
+          </nav>
+          <div class="sidebar-profile">
+            <span class="avatar avatar-small" aria-hidden="true">م</span>
+            <span class="profile-copy"><strong>مدير النظام</strong><small>مدير النظام</small></span>
+          </div>
+        </aside>
+
+        <div class="app-main">
+          <header class="topbar">
+            <div class="topbar-heading">
+              <p class="eyebrow">نظام إدارة العقارات</p>
+              <h1>لوحة المعلومات</h1>
+            </div>
+            <div class="topbar-account">
+              <span class="avatar" aria-hidden="true">م</span>
+              <span class="account-copy"><strong>مدير النظام</strong><small>مرحباً بعودتك</small></span>
+            </div>
+          </header>
+
+          <main class="page-content">
+            <section class="dashboard-intro" aria-labelledby="dashboard-title">
+              <div>
+                <h2 id="dashboard-title">نظرة عامة</h2>
+                <p>ملخص أداء العقارات والتحصيل لهذا الشهر.</p>
+              </div>
+              <span class="dashboard-date">بيانات تجريبية للعرض</span>
+            </section>
+
+            <section class="stats-grid" aria-label="المؤشرات الرئيسية">
+              <article class="card stat-card">
+                <div class="stat-card-top"><span class="stat-label">إجمالي العقارات</span><span class="stat-icon">⌂</span></div>
+                <strong class="stat-value">٢٤</strong>
+                <span class="stat-footnote"><strong>٣</strong> أضيفت هذا الشهر</span>
+              </article>
+              <article class="card stat-card">
+                <div class="stat-card-top"><span class="stat-label">الوحدات المشغولة</span><span class="stat-icon is-green">▦</span></div>
+                <strong class="stat-value">٧٢٪</strong>
+                <span class="stat-footnote">من إجمالي ١٢٨ وحدة</span>
+              </article>
+              <article class="card stat-card">
+                <div class="stat-card-top"><span class="stat-label">إيرادات هذا الشهر</span><span class="stat-icon is-green">◉</span></div>
+                <strong class="stat-value">١٨٫٤ م</strong>
+                <span class="stat-footnote"><strong>↑ ٨٪</strong> مقارنة بالشهر الماضي</span>
+              </article>
+              <article class="card stat-card">
+                <div class="stat-card-top"><span class="stat-label">دفعات مستحقة</span><span class="stat-icon is-amber">◷</span></div>
+                <strong class="stat-value">٦</strong>
+                <span class="stat-footnote">تحتاج إلى متابعة</span>
+              </article>
+            </section>
+
+            <section class="dashboard-grid" aria-label="التحليلات">
+              <article class="card chart-card">
+                <div class="card-heading">
+                  <div><h3>نظرة على الإيرادات</h3><p>الإيرادات المحصلة خلال آخر ٧ أشهر</p></div>
+                  <span class="status-badge status-positive">هذا العام</span>
+                </div>
+                <div class="chart-summary"><strong>١٨٫٤ م د.ع</strong><span>إجمالي التحصيل</span></div>
+                <div class="chart" role="img" aria-label="مخطط توضيحي للإيرادات خلال سبعة أشهر">
+                  <div class="chart-group"><span class="chart-bar" style="height:46%"></span><span class="chart-bar is-current" style="height:58%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:58%"></span><span class="chart-bar is-current" style="height:65%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:50%"></span><span class="chart-bar is-current" style="height:61%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:64%"></span><span class="chart-bar is-current" style="height:72%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:57%"></span><span class="chart-bar is-current" style="height:68%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:72%"></span><span class="chart-bar is-current" style="height:80%"></span></div>
+                  <div class="chart-group"><span class="chart-bar" style="height:66%"></span><span class="chart-bar is-current" style="height:91%"></span></div>
+                </div>
+                <div class="chart-labels"><span>أيار</span><span>حزيران</span><span>تموز</span><span>آب</span><span>أيلول</span><span>تشرين ١</span><span>تشرين ٢</span></div>
+              </article>
+
+              <article class="card occupancy-card">
+                <div class="card-heading"><div><h3>إشغال الوحدات</h3><p>حالة الوحدات في جميع العقارات</p></div></div>
+                <div class="occupancy-content">
+                  <div class="occupancy-ring" role="img" aria-label="نسبة الإشغال ٧٢ بالمئة">
+                    <div class="occupancy-value"><strong>٧٢٪</strong><span>نسبة الإشغال</span></div>
+                  </div>
+                  <div class="occupancy-legend">
+                    <div class="legend-row"><span class="legend-label"><span class="legend-dot"></span>مشغولة</span><strong>٩٢ وحدة</strong></div>
+                    <div class="legend-row"><span class="legend-label"><span class="legend-dot is-gray"></span>متاحة أو صيانة</span><strong>٣٦ وحدة</strong></div>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section class="card recent-card" aria-labelledby="recent-title">
+              <div class="card-heading">
+                <div><h3 id="recent-title">العقارات المضافة مؤخراً</h3><p>آخر العقارات المسجلة في النظام</p></div>
+                <a class="text-link" href="/properties">عرض كل العقارات</a>
+              </div>
+              <div class="table-scroll">
+                <table class="data-table">
+                  <thead><tr><th scope="col">العقار</th><th scope="col">المالك</th><th scope="col">الوحدات</th><th scope="col">الإيجار الشهري</th><th scope="col">الحالة</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="property-cell"><span class="property-thumb" aria-hidden="true">⌂</span><span><strong>مجمع النخيل السكني</strong><small>المنصور، بغداد</small></span></span></td><td>أحمد عبد الله</td><td>١٨ وحدة</td><td><span class="money">4,500,000 د.ع</span></td><td><span class="status-badge status-positive">نشط</span></td></tr>
+                    <tr><td><span class="property-cell"><span class="property-thumb" aria-hidden="true">⌂</span><span><strong>برج الرافدين التجاري</strong><small>الكرادة، بغداد</small></span></span></td><td>سارة محمود</td><td>٢٤ وحدة</td><td><span class="money">7,200,000 د.ع</span></td><td><span class="status-badge status-positive">نشط</span></td></tr>
+                    <tr><td><span class="property-cell"><span class="property-thumb" aria-hidden="true">⌂</span><span><strong>دار الورد</strong><small>الجادرية، بغداد</small></span></span></td><td>محمد كريم</td><td>١٢ وحدة</td><td><span class="money">3,600,000 د.ع</span></td><td><span class="status-badge status-warning">قيد الإعداد</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

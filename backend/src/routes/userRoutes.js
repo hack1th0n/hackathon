@@ -1,0 +1,10 @@
+const express = require('express'); 
+const { requireAuth, requireRole, validate } = require('../middleware'); 
+const { createUserSchema, updateUserSchema } = require('../validators'); 
+const userController = require('../controllers/userController'); 
+const router = express.Router(); 
+router.use(requireAuth, requireRole('admin')); 
+router.get('/', userController.list); 
+router.post('/', validate(createUserSchema), userController.create); 
+router.patch('/:id', validate(updateUserSchema), userController.update); 
+module.exports = router;
